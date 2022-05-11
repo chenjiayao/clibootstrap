@@ -1,6 +1,8 @@
 package main
 
-import "clibootstrap/cmd"
+import (
+	"clibootstrap/cmd"
+)
 
 func main() {
 	cmd.Execute()
