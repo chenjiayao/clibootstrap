@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"fmt"
+	"clibootstrap/globals"
 
 	"github.com/spf13/cobra"
 )
@@ -10,7 +10,7 @@ var versionCmd = &cobra.Command{
 	Use:   "version",
 	Short: "Print the version number of clibootstrap",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("0.1.0")
+		globals.SugaredLogger.Infof("clibootstrap v%s", "0.01")
 	},
 }
 
